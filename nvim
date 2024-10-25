@@ -1,0 +1,3 @@
+#!/bin/bash
+
+apptainer run -B /local/weissberg ~/.local/container/nvim.sif "$@"

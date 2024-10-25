@@ -1,0 +1,8 @@
+Bootstrap: docker
+From: alpine:3.20
+
+%post
+	apk add bash curl git lua nodejs npm lazygit bottom python3 go neovim ripgrep alpine-sdk --update
+
+%runscript
+	nvim "$@"
